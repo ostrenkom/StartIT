@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Vehicle speed (km/h): ");
+        var speed = scanner.nextDouble();
+
+        System.out.print("Travel time (hours): ");
+        var time = scanner.nextDouble();
+
+        var distance = speed * time;
+
+        System.out.println("The car will pass " + distance + " km for " + time + " hours at speed " + speed + " \n" +
+                "km/h.");
+    }
+}
